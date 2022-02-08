@@ -4,9 +4,9 @@ vector<int> twoSum(vector<int>& nums, int target) {
       map<int, int> map;
       vector<int> pairs;
       for(int i = 0; i < nums.size(); i++) {
-          int complement = target - nums[i];
-          if(map.find(complement) != map.end()) {
-              pairs.push_back(map.find(complement)->second);
+          int comp = target - nums[i];
+          if(map.find(comp) != map.end()) {
+              pairs.push_back(map.find(comp)->second);
               pairs.push_back(i);
               break;
           }
