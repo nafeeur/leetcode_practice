@@ -1,7 +1,7 @@
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
         nums = []
-        total = 0
+        sum = 0
         count = 0
         for i in range(len(s)):
             if s[i] == "R":
@@ -9,8 +9,8 @@ class Solution:
             elif s[i] == "L":
                 nums.append(-1)
         for i in range(len(nums)):
-            total += nums[i]
-            if total == 0:
+            sum += nums[i]
+            if sum == 0:
                 count+=1
         return count  
         
