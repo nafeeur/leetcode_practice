@@ -4,8 +4,7 @@ class Solution:
         s=list(s)
         
         while l<r:
-            if l==r:
-                break
+         
             while not s[l].isalpha() and l<r:
                 l+=1
             while not s[r].isalpha() and l<r:
