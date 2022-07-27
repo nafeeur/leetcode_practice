@@ -22,4 +22,4 @@ class Solution:
             
         return mergedArr
         
-        
+        #Time 
