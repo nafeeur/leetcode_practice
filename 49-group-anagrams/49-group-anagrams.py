@@ -1,10 +1,7 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        lookup = defaultdict(list)
+        anagrams = defaultdict(list)
         
-        for s in strs:
-            key = "".join(sorted(list(s)))
-            lookup[key].append(s) #"aet" : {"eat"}
-        
-        return lookup.values()
+        [anagrams["".join(sorted(list(s)))].append(s) for s in strs]
+        return anagrams.values()
             
